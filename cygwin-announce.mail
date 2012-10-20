@@ -1,5 +1,6 @@
 To: cygwin-announce(at)cygwin.com
 Subject: New package: cgdb 0.6.6-1 -- A curses-based interface to the GNU Debugger (GDB)
+--text follows this line--
 
 PACKAGE DESCRIPTION
 ===================
@@ -17,9 +18,8 @@ CGDB.
 CHANGES SINCE LAST RELEASE
 ==========================
 
-See
-  /usr/share/doc/cgdb-*/htdocs/ChangeLog
-  http://cgdb.svn.sourceforge.net/viewvc/cgdb/cgdb/trunk/ChangeLog?revision=HEAD&view=markup
+/usr/share/doc/cgdb-*/htdocs/ChangeLog
+http://cgdb.svn.sourceforge.net/viewvc/cgdb/cgdb/trunk/ChangeLog?revision=HEAD&view=markup
 
 INSTALL OR UPGRADE NOTES
 ========================
