@@ -6,4 +6,4 @@ the source as it executes. The UI is modeled on the classic Unix text
 editor, vi. Those familiar with vi should feel right at home using
 CGDB."
 category: Devel
-requires: libncurses10 libreadline7
+requires: libncursesw10 libreadline7

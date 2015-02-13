@@ -11,7 +11,7 @@ editor, vi. Those familiar with vi should feel right at home using
 CGDB.
 
 Runtime requirements:
-  libncurses10
+  libncursesw10
   libreadline7
 
 Build requirements:
@@ -19,24 +19,29 @@ Build requirements:
   readline
 
 Canonical homepage:
-  http://sourceforge.net/projects/cgdb
+  http://cgdb.github.com
+  https://github.com/cgdb
   http://packages.debian.org/cgdb
+  http://sourceforge.net/projects/cgdb (old)
 
 Canonical download:
-  See above
+  http://cgdb.me/files
 
 Version control repository:
-  See sourceforge
+  git clone git://github.com/cgdb/cgdb.git
 
 Mailing list:
-  See https://sourceforge.net/projects/cgdb/support
+  https://groups.google.com/group/cgdb-users
+  https://groups.google.com/group/cgdb-dev
 
 Forum / Wiki:
 
 IRC channel:
+  #cgdb on freenode
 
 Upstream contact:
   Maintainer: Robert Rossi <bobbybrasko@users.sourceforge.net>
+              Bob Rossi <bob@brasko.net>
   Bugs: https://sourceforge.net/mailarchive/forum.php?forum_name=cgdb-devel
 
 License:
@@ -63,6 +68,14 @@ Files included in the binary distribution:
 
 Port Notes:
 
+----- version 0.6.7-1 -----
+- New upstream release 2015-02-13 Jari Aalto
+- Add Debian patches
+- Add path patches/cygwin/10-cygwin-lib-calls.patch
+  to fix Cygwin compile issues. Namely
+  https://cygwin.com/cygwin-api/cygwin-functions.html#func-cygwin-conv-path
+- Compile with libncursesw10
+
 ----- version 0.6.6-1 -----
 - Initial Cygwin release 2012-09-22 Jari Aalto
 
@@ -70,4 +83,4 @@ Port Notes:
 - Private release 2008-03-12 Jari Aalto
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2008-2012 Jari Aalto; Licensed under GPL v2 or later
+Copyright (C) 2008-2015 Jari Aalto; Licensed under GPL v2 or later

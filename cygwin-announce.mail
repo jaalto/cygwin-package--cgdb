@@ -1,11 +1,11 @@
 To: cygwin-announce@cygwin.com
-Subject: New package: cgdb 0.6.6-1 -- A curses-based interface to the GNU Debugger (GDB)
+Subject: updated: cgdb 0.6.7-1 -- A curses-based interface to the GNU Debugger (GDB)
 --text follows this line--
 
 PACKAGE DESCRIPTION
 ===================
 
-Homepage: http://sourceforge.net/projects/cgdb
+Homepage: http://cgdb.github.io
 License : GPL-2+
 
 The goal of program is to be lightweight and responsive; not
@@ -18,8 +18,8 @@ CGDB.
 CHANGES SINCE LAST RELEASE
 ==========================
 
-/usr/share/doc/cgdb-*/htdocs/ChangeLog
-http://cgdb.svn.sourceforge.net/viewvc/cgdb/cgdb/trunk/ChangeLog?revision=HEAD&view=markup
+Cygwin: compiled with libncursesw10
+See https://github.com/cgdb/cgdb
 
 INSTALL OR UPGRADE NOTES
 ========================
