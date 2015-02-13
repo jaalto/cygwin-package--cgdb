@@ -1,0 +1,54 @@
+"mips" seems to be a define on mips(el), breaking comiplation.
+
+--- a/lib/gdbmi/gdbmi_parser.c
++++ b/lib/gdbmi/gdbmi_parser.c
+@@ -18,7 +18,7 @@
+ 
+ struct gdbmi_parser {
+     char *last_error;
+-    gdbmi_pstate *mips;
++    gdbmi_pstate *mi_ps;
+     gdbmi_pdata_ptr pdata_ptr;
+ };
+ 
+@@ -35,7 +35,7 @@
+     }
+ 
+     /* Create a new parser instance */
+-    parser->mips = gdbmi_pstate_new();
++    parser->mi_ps = gdbmi_pstate_new();
+     if (!parser) {
+         fprintf(stderr, "%s:%d", __FILE__, __LINE__);
+         return NULL;
+@@ -62,10 +62,10 @@
+         parser->last_error = NULL;
+     }
+ 
+-    if (parser->mips) {
++    if (parser->mi_ps) {
+         /* Free the parser instance */
+-        gdbmi_pstate_delete(parser->mips);
+-        parser->mips = NULL;
++        gdbmi_pstate_delete(parser->mi_ps);
++        parser->mi_ps = NULL;
+     }
+ 
+     if (parser->pdata_ptr) {
+@@ -111,7 +111,7 @@
+         if (pattern == 0)
+             break;
+         mi_status =
+-                gdbmi_push_parse(parser->mips, pattern, NULL,
++                gdbmi_push_parse(parser->mi_ps, pattern, NULL,
+                 parser->pdata_ptr);
+     } while (mi_status == YYPUSH_MORE);
+ 
+@@ -163,7 +163,7 @@
+         if (pattern == 0)
+             break;
+         mi_status =
+-                gdbmi_push_parse(parser->mips, pattern, NULL,
++                gdbmi_push_parse(parser->mi_ps, pattern, NULL,
+                 parser->pdata_ptr);
+     } while (mi_status == YYPUSH_MORE);
+ 
