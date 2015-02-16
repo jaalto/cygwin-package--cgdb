@@ -17,6 +17,8 @@ Runtime requirements:
 Build requirements:
   libncurses-devel
   readline
+  quilt
+  help2man
 
 Canonical homepage:
   http://cgdb.github.com
@@ -67,6 +69,15 @@ Files included in the binary distribution:
 ------------------------------------------
 
 Port Notes:
+
+----- version 0.6.7+20150214+git3a710f9-1 -----
+- New upstream release 2015-02-16 Jari Aalto
+- Compile with libncursesw10
+- Git release removes obsolete Cygwin 1.7 specific
+  calls cygwin_conv_to_full_win32_path(). See
+  https://cygwin.com/cygwin-api/cygwin-functions.html#func-cygwin-conv-path
+- Disable Debian specific patches for this release,
+  which is taken from Git (patches don't apply)
 
 ----- version 0.6.7-1 -----
 - New upstream release 2015-02-13 Jari Aalto
