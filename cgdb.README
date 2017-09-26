@@ -70,6 +70,9 @@ Files included in the binary distribution:
 
 Port Notes:
 
+----- version 0.6.7+20170812+gitfa44c9a-1 -----
+- New upstream release 2017-09-26 Jari Aalto
+
 ----- version 0.6.7+20150214+git3a710f9-1 -----
 - New upstream release 2015-02-16 Jari Aalto
 - Compile with libncursesw10
@@ -94,4 +97,4 @@ Port Notes:
 - Private release 2008-03-12 Jari Aalto
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2008-2015 Jari Aalto; Licensed under GPL v2 or later
+Copyright (C) 2008-2017 Jari Aalto; Licensed under GPL v2 or later
