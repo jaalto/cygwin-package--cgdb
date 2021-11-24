@@ -15,11 +15,13 @@ Runtime requirements:
   libreadline7
 
 Build requirements:
-  libncurses-devel
+  autoconf
+  automake
   flex
-  readline
-  quilt
   help2man
+  libncurses-devel
+  quilt
+  readline-devel
 
 Canonical homepage:
   http://cgdb.github.com
@@ -70,6 +72,9 @@ Files included in the binary distribution:
 
 Port Notes:
 
+----- version 0.7.1+20211106+git61e3606-1 -----
+- New upstream release 2021-11-24 Jari Aalto
+
 ----- version 0.7.1+20200415+git00e26a3-1 -----
 - New upstream release 2020-05-05 Jari Aalto
 
@@ -109,4 +114,4 @@ Port Notes:
 - Private release 2008-03-12 Jari Aalto
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2008-2020 Jari Aalto; Licensed under GPL v2 or later
+Copyright (C) 2008-2021 Jari Aalto; Licensed under GPL v2 or later
