@@ -8,10 +8,10 @@
 
 --- a/cgdb/Makefile.am
 +++ b/cgdb/Makefile.am
-@@ -6,7 +6,7 @@ AM_CXXFLAGS = \
-     -I$(top_srcdir)/lib/util \
+@@ -7,7 +7,7 @@ AM_CXXFLAGS = \
      -I$(top_srcdir)/lib/tgdb \
      -I$(top_srcdir)/lib/tokenizer \
+     -I$(top_srcdir)/lib/vterm \
 -    -std=c++11
 +    -std=gnu++11
  
@@ -39,8 +39,8 @@
  librline_a_SOURCES = \
 --- a/lib/tgdb/Makefile.am
 +++ b/lib/tgdb/Makefile.am
-@@ -2,7 +2,7 @@ AM_CXXFLAGS = \
-     -I$(top_srcdir)/lib/rline \
+@@ -1,7 +1,7 @@
+ AM_CXXFLAGS = \
      -I$(top_srcdir)/lib/util \
      -I$(top_srcdir)/lib/tgdb \
 -    -std=c++11
